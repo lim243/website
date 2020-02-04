@@ -18,7 +18,7 @@ class Header extends Component {
                 <Nav.Link href='#about'>About</Nav.Link>
               </Nav.Item> */}
               <Nav.Item>
-                <Nav.Link href='http://bit.ly/2OuJFnT'>Resume</Nav.Link>
+                <Nav.Link href='https://bit.ly/37Ug3qQ'>Resume</Nav.Link>
               </Nav.Item>
               {/* <Nav.Item>
                 <Nav.Link href='#contact'>Contact</Nav.Link>
