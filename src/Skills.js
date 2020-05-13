@@ -38,8 +38,10 @@ class Skills extends Component {
 }
 
 const Styled = styled.div`
+  // height: 12rem;
+
   .row {
-    height: 1.75rem;
+    // height: 1.75rem;
     margin: 10px;
   }
 
