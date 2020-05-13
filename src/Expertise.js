@@ -1,8 +1,15 @@
 import React, { Component } from "react";
-import { Card, Col, Row } from "react-bootstrap";
 import styled from "styled-components";
 
-const frameworks = ["React", "Redux", "MongoDB", "Firebase", "Express", "Node"];
+const frameworks = [
+  "React",
+  "Redux",
+  "MongoDB",
+  "Firebase",
+  "Express",
+  "Node",
+  "GoogleMaps API",
+];
 
 const renderFrameworks = frameworks.map((frame) => <p className='frameworks'>{frame}</p>);
 
