@@ -14,6 +14,7 @@ class Main extends Component {
         <Skills />
         <Expertise />
         <Projects />
+        This page is under construction by - Andrew T. Lim ✋🏻
       </Styled>
     );
   }

@@ -43,7 +43,8 @@ const Styled = styled.div`
   // background-attachment: fixed;
   background-color: #D7CEC7;
   display: flex;
-  height: 100%;
+  padding: 5rem;
+  // height: 100%;
   flex-direction: column;
 
   .icon-row {
