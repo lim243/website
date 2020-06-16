@@ -5,9 +5,9 @@ import Skill from "./Skill";
 
 const labels = {
   "python": { name: "Python", value: "100" },
-  "java": { name: "Java", value: "95" },
+  "java": { name: "Java", value: "90" },
   "javascript": { name: "JavaScript", value: "90" },
-  "HTMLCSS": { name: "HTML/CSS", value: "100" },
+  "HTMLCSS": { name: "HTML/CSS", value: "90" },
   "R": { name: "R", value: "80" },
   "C": { name: "C", value: "75" },
   "Cpp": { name: "C++", value: "70" },
@@ -45,7 +45,6 @@ const Styled = styled.div`
   // height: 12rem;
 
   .row {
-    // height: 1.75rem;
     margin: 10px;
   }
 

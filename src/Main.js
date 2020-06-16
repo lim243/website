@@ -5,6 +5,7 @@ import MainHeader from "./MainHeader";
 import Skills from "./Skills";
 import Expertise from "./Expertise";
 import Projects from "./Projects";
+import Leadership from "./Leadership";
 
 class Main extends Component {
   render() {
@@ -14,6 +15,7 @@ class Main extends Component {
         <Skills />
         <Expertise />
         <Projects />
+        <Leadership />
         This page is under construction by - Andrew T. Lim ✋🏻
       </Styled>
     );
