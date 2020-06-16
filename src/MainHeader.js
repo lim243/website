@@ -36,11 +36,7 @@ class MainHeader extends Component {
 }
 
 const Styled = styled.div`
-  // background-image: url(${img});
-  // background-size: cover;
-  // background-repeat: no-repeat;
-  // background-position: center center;
-  // background-attachment: fixed;
+  // margin-bottom: 3rem;
   background-color: #D7CEC7;
   display: flex;
   padding: 5rem;
@@ -52,13 +48,13 @@ const Styled = styled.div`
   }
 
   .name {
-    font-family: Cabin;
+    // font-family: Cabin;
     font-weight: bold;
   }
 
   .mini-description {
     font-size: 20px;
-    font-family: Cabin;
+    // font-family: Cabin;
     letter-spacing: 2px;
     line-height: 1.3em;
     color: black;
