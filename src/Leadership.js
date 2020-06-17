@@ -12,6 +12,17 @@ const leaderships = [
       { title: "Cultural Officer", year: "2017-2018" },
     ],
   },
+  {
+    name: "CS 38003 - Python Programming",
+    logo: "img/purdue_logo.jpg",
+    roles: [
+      {
+        title: "Undergraduate Teaching Assistant",
+        year: "2020-2020",
+        description: "TBA",
+      },
+    ],
+  },
 ];
 
 const mapRoles = (roles) => {
@@ -46,6 +57,8 @@ class Leadership extends Component {
 }
 
 const Styled = styled.div`
+  margin: 1rem;
+
   .img-fluid {
     height: 100px;
   }
