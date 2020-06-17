@@ -57,7 +57,7 @@ class Leadership extends Component {
 }
 
 const Styled = styled.div`
-  margin: 1rem;
+  margin: 1rem 0;
 
   .img-fluid {
     height: 100px;
