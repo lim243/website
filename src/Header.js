@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Navbar, Nav } from "react-bootstrap";
+import links from "./links";
 
 class Header extends Component {
   render() {
@@ -17,11 +18,11 @@ class Header extends Component {
                 <Nav.Link href='#about'>About</Nav.Link>
               </Nav.Item> */}
             <Nav.Item>
-              <Nav.Link href='https://bit.ly/37Ug3qQ'>Resume</Nav.Link>
+              <Nav.Link href={links.resume}>Resume</Nav.Link>
             </Nav.Item>
             {/* <Nav.Item>
-                <Nav.Link href='#contact'>Contact</Nav.Link>
-              </Nav.Item> */}
+              <Nav.Link href='#contact'>Contact</Nav.Link>
+            </Nav.Item> */}
           </Nav>
         </Navbar.Collapse>
       </Navbar>

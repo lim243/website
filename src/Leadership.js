@@ -29,12 +29,8 @@ const mapRoles = (roles) => {
   return roles.map((role, key) => (
     // <li>
     <Row className='title-row justify-content-md-center'>
-      <Col xs lg='2'>
-        {role.title}
-      </Col>
-      <Col xs lg='2'>
-        {role.year}
-      </Col>
+      <p className='col-lg-3 col'>{role.title}</p>
+      <p className='col-lg-2 col'>{role.year}</p>
     </Row>
     // </li>
   ));
@@ -58,6 +54,15 @@ class Leadership extends Component {
 
 const Styled = styled.div`
   margin: 1rem 0;
+
+  .col {
+    margin: 0;
+    align-self: center;
+  }
+
+  .row {
+    justify-content: center;
+  }
 
   .img-fluid {
     height: 100px;

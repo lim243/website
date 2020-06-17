@@ -1,10 +1,5 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import img from "./nola_fountain.jpg";
-
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 class MainHeader extends Component {
   render() {
@@ -17,18 +12,6 @@ class MainHeader extends Component {
           <h6 className='mini-description'>
             Computer Science and Data Science student at Purdue University
           </h6>
-
-          <div className='icon-row'>
-            <a className='icons' href='https://github.com/lim243'>
-              <FontAwesomeIcon icon={faGithub} />
-            </a>
-            <a className='icons' href='https://linkedin.com/in/andrew-t-lim-a36177149/'>
-              <FontAwesomeIcon icon={faLinkedin} />
-            </a>
-            <a className='icons' href='mailto:lim243@purdue.edu'>
-              <FontAwesomeIcon icon={faEnvelope} />
-            </a>
-          </div>
         </span>
       </Styled>
     );
