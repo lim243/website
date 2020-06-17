@@ -17,9 +17,13 @@ const leaderships = [
 const mapRoles = (roles) => {
   return roles.map((role, key) => (
     // <li>
-    <Row className='title-row'>
-      <Col>{role.title}</Col>
-      <Col>{role.year}</Col>
+    <Row className='title-row justify-content-md-center'>
+      <Col xs lg='2'>
+        {role.title}
+      </Col>
+      <Col xs lg='2'>
+        {role.year}
+      </Col>
     </Row>
     // </li>
   ));
@@ -47,11 +51,12 @@ const Styled = styled.div`
   }
 
   .leadership-container {
-    margin: 0 20rem;
+    flex-wrap: wrap;
+    // margin: 0 20rem;
   }
 
   .leadership-element {
-    padding: 0 5rem;
+    // padding: 0 5rem;
   }
 
   .title-col {

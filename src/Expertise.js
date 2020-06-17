@@ -16,7 +16,7 @@ const frameworks = [
 
 const apis = ["Pandas", "Ggplot Python"];
 
-const renderFrameworks = frameworks.map((frame) => <p className='frameworks'>{frame}</p>);
+const renderFrameworks = frameworks.map((frame) => <p className='framework'>{frame}</p>);
 const renderAPIs = apis.map((api) => <p className='frameworks'>{api}</p>);
 
 class Expertise extends Component {
@@ -32,21 +32,20 @@ class Expertise extends Component {
 
 const Styled = styled.div`
   margin: auto;
-  // margin-bottom: 3rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  // padding: 2rem;
+  // flex-wrap: wrap;
 
   .expertise {
+    flex-wrap: wrap;
     margin: auto;
     display: flex;
-    // width: 70%;
     flex-direction: row;
     justify-content: center;
   }
 
-  .frameworks {
+  .framework {
     border: 1px solid;
     border-radius: 2px;
     margin: 5px;
