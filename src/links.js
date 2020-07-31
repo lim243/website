@@ -1,5 +1,5 @@
 const links = {
-  resume: "https://bit.ly/37Ug3qQ",
+  resume: "https://bit.ly/2DaEl5I",
 };
 
 export default links;
