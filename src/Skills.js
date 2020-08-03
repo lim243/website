@@ -19,7 +19,7 @@ const labels = {
 class Skills extends Component {
   render() {
     return (
-      <Styled>
+      <Styled id="skills">
         <Row>
           <Col>
             <Skill data={labels.python} />
@@ -43,6 +43,7 @@ class Skills extends Component {
 
 const Styled = styled.div`
   // height: 12rem;
+  padding-top: 2.2rem
 
   .row {
     margin: 10px;

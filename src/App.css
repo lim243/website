@@ -5,3 +5,7 @@
   flex-direction: column;
   font-family: "DM Mono", monospace;
 }
+
+html {
+  scroll-behavior: smooth;
+}

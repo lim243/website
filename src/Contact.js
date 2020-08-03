@@ -9,7 +9,7 @@ import links from "./links";
 class Contact extends Component {
   render() {
     return (
-      <Styled>
+      <Styled id="contact">
         <h5>Follow me here!</h5>
         <div className='icon-row'>
           <a className='icons' href='https://github.com/lim243' alt='Github'>
