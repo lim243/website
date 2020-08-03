@@ -23,7 +23,6 @@ class Main extends Component {
         <Expertise />
         <Projects />
         <Leadership />
-        <div className='dividing-line' />
         <Contact />
         This page is under construction by - Andrew T. Lim ✋🏻
       </Styled>
@@ -32,14 +31,6 @@ class Main extends Component {
 }
 
 const Styled = styled.div`
-  .dividing-line {
-    display: block;
-    margin: 0 auto;
-    width: 50%;
-    padding-top: 0.1em;
-    border-bottom: 1px solid black;
-  }
-
   .btn {
     margin-top: 1.5rem;
   }

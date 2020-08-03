@@ -1,9 +1,21 @@
 import React, { Component } from "react";
 import { Card, Col, Row } from "react-bootstrap";
 import styled from "styled-components";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faLink, faFile } from "@fortawesome/free-solid-svg-icons";
+import DividingLine from "./DividingLine";
 
 // TODO: Make roles on click to show description
 const leaderships = [
+  {
+    name: "Formstack",
+    logo: "img/formstack_logo.svg",
+    roles: [
+      { title: "Software Engineering Intern", year: "2020-Present", description: "TBA" },
+    ],
+    uri: "https://www.formstack.com/"
+  },
   {
     name: "Purdue University Malaysian Students Association",
     logo: "img/pumsalogo.png",
@@ -11,6 +23,7 @@ const leaderships = [
       { title: "President", year: "2018-2019", description: "TBA" },
       { title: "Cultural Officer", year: "2017-2018" },
     ],
+    uri: "https://pumsa.wordpress.com/"
   },
   {
     name: "CS 38003 - Python Programming",
@@ -18,10 +31,11 @@ const leaderships = [
     roles: [
       {
         title: "Undergraduate Teaching Assistant",
-        year: "2020-2020",
+        year: "2020-Present",
         description: "TBA",
       },
     ],
+    url: "https://catalog.purdue.edu/preview_course_nopop.php?catoid=8&coid=82371"
   },
 ];
 
@@ -42,6 +56,10 @@ const renderLeaderships = leaderships.map((leader, index) => (
     <div className='leadership-element'>
       <h4>{leader.name}</h4>
       <ul>{mapRoles(leader.roles)}</ul>
+      <a className='icons' href={leader.uri}>
+            <FontAwesomeIcon icon={faLink} />
+      </a>
+      <DividingLine />
     </div>
   </div>
 ));
@@ -79,6 +97,14 @@ const Styled = styled.div`
 
   .title-col {
     margin: 5rem;
+  }
+
+  .icons {
+    color: black;
+    padding: 0.1em;
+    font-size: 25px;
+    text-align: center;
+    margin: 5px;
   }
 `;
 export default Leadership;

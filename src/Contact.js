@@ -10,18 +10,18 @@ class Contact extends Component {
   render() {
     return (
       <Styled>
-        <p>Follow me here!</p>
+        <h5>Follow me here!</h5>
         <div className='icon-row'>
-          <a className='icons' href='https://github.com/lim243'>
+          <a className='icons' href='https://github.com/lim243' alt='Github'>
             <FontAwesomeIcon icon={faGithub} />
           </a>
-          <a className='icons' href='https://linkedin.com/in/andrew-t-lim-a36177149/'>
+          <a className='icons' href='https://linkedin.com/in/andrew-t-lim-a36177149/' alt='LinkedIn'>
             <FontAwesomeIcon icon={faLinkedin} />
           </a>
-          <a className='icons' href='mailto:lim243@purdue.edu'>
+          <a className='icons' href='mailto:lim243@purdue.edu' alt='Email'>
             <FontAwesomeIcon icon={faEnvelope} />
           </a>
-          <a className='icons' href={links.resume}>
+          <a className='icons' href={links.resume} alt='Resume'>
             <FontAwesomeIcon icon={faFile} />
           </a>
         </div>
