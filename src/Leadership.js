@@ -35,7 +35,7 @@ const leaderships = [
         description: "TBA",
       },
     ],
-    url: "https://catalog.purdue.edu/preview_course_nopop.php?catoid=8&coid=82371"
+    uri: "https://catalog.purdue.edu/preview_course_nopop.php?catoid=8&coid=82371"
   },
 ];
 
