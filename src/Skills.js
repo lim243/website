@@ -4,16 +4,16 @@ import styled from "styled-components";
 import Skill from "./Skill";
 
 const labels = {
-  "python": { name: "Python", value: "100" },
-  "java": { name: "Java", value: "90" },
-  "javascript": { name: "JavaScript", value: "90" },
-  "HTMLCSS": { name: "HTML/CSS", value: "90" },
-  "R": { name: "R", value: "80" },
-  "C": { name: "C", value: "75" },
-  "Cpp": { name: "C++", value: "70" },
-  "SQL": { name: "SQL", value: "80" },
-  "Pandas": { name: "Pandas", value: "90" },
-  "ggplot": { name: "Ggplot", value: "90" },
+  python: { name: "Python", value: "100" },
+  java: { name: "Java", value: "90" },
+  javascript: { name: "JavaScript", value: "90" },
+  HTMLCSS: { name: "HTML/CSS", value: "90" },
+  R: { name: "R", value: "80" },
+  C: { name: "C", value: "75" },
+  Cpp: { name: "C++", value: "70" },
+  SQL: { name: "SQL", value: "80" },
+  Pandas: { name: "Pandas", value: "90" },
+  ggplot: { name: "Ggplot", value: "90" },
 };
 
 class Skills extends Component {

@@ -9,12 +9,28 @@ import DividingLine from "./DividingLine";
 // TODO: Make roles on click to show description
 const leaderships = [
   {
+    name: "Kraft Heinz - Purdue Data Mine",
+    logo: "img/kraftHeinzLogo.png",
+    roles: [
+      {
+        title: "Research and Teaching Assistant",
+        year: "Fall 2020 - Spring 2021",
+        description: "TBA",
+      },
+    ],
+    uri: "https://datamine.purdue.edu/symposium/kraftheinz/2021.html",
+  },
+  {
     name: "Formstack",
     logo: "img/formstack_logo.svg",
     roles: [
-      { title: "Software Engineering Intern", year: "2020-Present", description: "TBA" },
+      {
+        title: "Software Engineering Intern",
+        year: "Summer 2020",
+        description: "TBA",
+      },
     ],
-    uri: "https://www.formstack.com/"
+    uri: "https://www.formstack.com/",
   },
   {
     name: "Purdue University Malaysian Students Association",
@@ -23,7 +39,7 @@ const leaderships = [
       { title: "President", year: "2018-2019", description: "TBA" },
       { title: "Cultural Officer", year: "2017-2018" },
     ],
-    uri: "https://pumsa.wordpress.com/"
+    uri: "https://pumsa.wordpress.com/",
   },
   {
     name: "CS 38003 - Python Programming",
@@ -31,33 +47,33 @@ const leaderships = [
     roles: [
       {
         title: "Undergraduate Teaching Assistant",
-        year: "2020-Present",
+        year: "Spring 2020",
         description: "TBA",
       },
     ],
-    uri: "https://catalog.purdue.edu/preview_course_nopop.php?catoid=8&coid=82371"
+    uri: "https://catalog.purdue.edu/preview_course_nopop.php?catoid=8&coid=82371",
   },
 ];
 
 const mapRoles = (roles) => {
   return roles.map((role, key) => (
     // <li>
-    <Row className='title-row justify-content-md-center'>
-      <p className='col-lg-3 col'>{role.title}</p>
-      <p className='col-lg-2 col'>{role.year}</p>
+    <Row className="title-row justify-content-md-center">
+      <p className="col-lg-3 col">{role.title}</p>
+      <p className="col-lg-2 col">{role.year}</p>
     </Row>
     // </li>
   ));
 };
 
 const renderLeaderships = leaderships.map((leader, index) => (
-  <div key={index} className='leadership-container'>
-    <img className='img-fluid' src={leader.logo} />
-    <div className='leadership-element'>
+  <div key={index} className="leadership-container">
+    <img className="img-fluid" src={leader.logo} />
+    <div className="leadership-element">
       <h4>{leader.name}</h4>
       <ul>{mapRoles(leader.roles)}</ul>
-      <a className='icons' href={leader.uri}>
-            <FontAwesomeIcon icon={faLink} />
+      <a className="icons" href={leader.uri}>
+        <FontAwesomeIcon icon={faLink} />
       </a>
       <DividingLine />
     </div>
@@ -83,7 +99,7 @@ const Styled = styled.div`
   }
 
   .img-fluid {
-    height: 100px;
+    height: 150px;
   }
 
   .leadership-container {

@@ -6,7 +6,12 @@ import Project from "./Project";
 class Projects extends Component {
   render() {
     return (
-      <Styled className='proj-row container-fluid'>
+      <Styled className="proj-row container-fluid">
+        <Row>
+          <Project proj={projs.wzstats} />
+          <Project proj={projs.dunnit} />
+          <Project proj={projs.creekit} />
+        </Row>
         <Row>
           <Project proj={projs.navi} />
           <Project proj={projs.ezcurrencyup} />
@@ -17,11 +22,6 @@ class Projects extends Component {
           <Project proj={projs.fliegen} />
           <Project proj={projs.memoryinfinite} />
         </Row>
-        {/* <Row>
-          <Project proj={projs.ircserver} />
-          <Project proj={projs.shell} />
-          <Project proj={projs.nba_stats} />
-        </Row> */}
       </Styled>
     );
   }
@@ -31,6 +31,27 @@ const Styled = styled.div``;
 
 // TODO: optional Link
 const projs = {
+  wzstats: {
+    name: "Warzone Stats",
+    description: `Had fun playing Call of Duty Warzone and decided to do some coding with it. This is just a simple discord bot that shows player's recent performance on the matches.`,
+    live: "https://discord.com/api/oauth2/authorize?client_id=787421783711940629&permissions=36507420672&scope=bot",
+    frameworks: ["NodeJS", "PostgreSQL", "React", "Express", "Heroku"],
+    img: "img/wz_logo.jpg",
+  },
+  dunnit: {
+    name: "Dunnit",
+    description: `An iOS task application that focuses on college student needs. One of the main functions include having a location notification feature that notifies the user if they are physically close to a task location.`,
+    repo: "https://github.com/zheng416/Dunnit2",
+    frameworks: ["iOS", "Firebase", "Swift"],
+    img: "img/todo.jpg",
+  },
+  creekit: {
+    name: "Creekit",
+    description: `A social media web application that tries to combine the best features of the mainstream social media. Users can make reddit style posts with the ability to add friends and communicate with each other.`,
+    repo: "https://github.com/lim243/CreekIt",
+    frameworks: ["Discord", "Bot", "Call of Duty Warzone", "Node Call of Duty"],
+    img: "img/social.jpg",
+  },
   navi: {
     name: "Navitravels",
     description: `An intern project at Navi LLC. I developed and launched a web application that utilizes travel-style-based categorization to allow users to create

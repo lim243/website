@@ -3,6 +3,9 @@ import { Card, Col, Row } from "react-bootstrap";
 import styled from "styled-components";
 
 const frameworks = [
+  "AWS",
+  "Docker",
+  "Kubernetes",
   "React",
   "Redux",
   "React Native",
@@ -10,20 +13,23 @@ const frameworks = [
   "MongoDB",
   "Express",
   "NodeJS",
+  "Selenium",
   "GoogleMaps API",
   "GooglePlaces API",
 ];
 
 const apis = ["Pandas", "Ggplot Python"];
 
-const renderFrameworks = frameworks.map((frame) => <p className='framework'>{frame}</p>);
-const renderAPIs = apis.map((api) => <p className='frameworks'>{api}</p>);
+const renderFrameworks = frameworks.map((frame) => (
+  <p className="framework">{frame}</p>
+));
+const renderAPIs = apis.map((api) => <p className="frameworks">{api}</p>);
 
 class Expertise extends Component {
   render() {
     return (
       <Styled>
-        <div className='expertise'>{renderFrameworks}</div>
+        <div className="expertise">{renderFrameworks}</div>
         {/* <div className='row expertise'>{renderAPIs}</div> */}
       </Styled>
     );
